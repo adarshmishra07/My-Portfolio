@@ -283,7 +283,7 @@ h1 {
     height: 90px;
     width: 90px;
     border-radius: 50%;
-    background-color: var(--highlights);
+    background-color: #ff580aa4;
 }
 
 .icon{
@@ -292,7 +292,7 @@ h1 {
     align-items: center;
     height: 85px;
     width: 85px;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 50%;
 }
 
