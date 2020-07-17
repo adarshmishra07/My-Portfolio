@@ -235,6 +235,7 @@ ul.nm li:hover span{
 }
 .description{
     font-size: 1rem;
+    letter-spacing: 1px;
 }
 @media screen and (max-width:700px){
     .name{
@@ -421,4 +422,8 @@ button{
     height: 100%;
     color: white;
     font-size: 13px;
+}
+
+a:hover{
+    text-decoration: none;
 }
