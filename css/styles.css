@@ -238,7 +238,7 @@ ul.nm li:hover span{
 }
 @media screen and (max-width:700px){
     .name{
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 }   
 @media screen and (max-width:320px){
@@ -327,6 +327,7 @@ h1 {
     }
     
 }
+
 .college-logo{
     position: relative;
     top: -60px;
