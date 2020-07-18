@@ -211,7 +211,7 @@
                     </div>
                     <div class="title">NodeJs</div>
                     <div class="baaar">
-                        <div class="chota-bar text-center" style="width: 60%;">60%</div>
+                        <div class="chota-bar text-center" style="width: 70%;">70%</div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-2">
@@ -231,7 +231,7 @@
                     </div>
                     <div class="title">React</div>
                     <div class="baaar">
-                        <div class="chota-bar text-center" style="width: 30%;">30%</div>
+                        <div class="chota-bar text-center" style="width: 55%;">55%</div>
                     </div>
                 </div>
             </div>
@@ -255,7 +255,7 @@
                     </div>
                     <div class="title">Figma</div>
                     <div class="baaar">
-                        <div class="chota-bar text-center" style="width: 60%;">60%</div>
+                        <div class="chota-bar text-center" style="width: 60%;">75%</div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-2">
@@ -266,7 +266,7 @@
                     </div>
                     <div class="title">Illustrator</div>
                     <div class="baaar">
-                        <div class="chota-bar text-center" style="width: 50%;">50%</div>
+                        <div class="chota-bar text-center" style="width: 50%;">70%</div>
                     </div>
                 </div>
                 <div class="col-6 col-sm-4 col-md-2">
@@ -322,10 +322,10 @@
             <h1 class="pb-4"><i class="fas fa-user"></i> Contact</h1>
             <div class="form-container">
                 <div class="text-center">Use this form of connect with me through socials</div>
-                <form action="mailto:adarshmishra0701@gmail.com">
+                <form id="getintouch">
                     <div class="form-group row justify-content-around my-5">
-                        <label class="col-12 col-md-2" for="name">Name</label>
-                        <div class="col-12 col-md-8"><input type="name" class="form-control" id="name"
+                        <label class="col-12 col-md-2" for="senderName">Name</label>
+                        <div class="col-12 col-md-8"><input type="name" class="form-control" id="senderName"
                                 placeholder="Name" required>
                         </div>
                     </div>
@@ -335,8 +335,8 @@
                                 placeholder="Enter email" required></div>
                     </div>
                     <div class="form-group row justify-content-around my-5">
-                        <label class="col-12 col-md-2" for="message">Message</label>
-                        <div class="col-12 col-md-8"><textarea class="form-control" id="message" rows="3" required
+                        <label class="col-12 col-md-2" for="Message">Message</label>
+                        <div class="col-12 col-md-8"><textarea class="form-control" id="Message" rows="3" required
                                 minlength="50"> </textarea>
                         </div>
                     </div>
@@ -369,12 +369,28 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 </script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_OSKA997WcOIDihPkMJaJ6");
+   })();
+</script>
 <script>
     $('.toggle').click(function () {
         $('nav').toggleClass('nav-visible');
         $('ul.main-nav').toggleClass('visible');
-    });
-    var myVar;
+    }   );
+
+    $("#getintouch").submit(function(e){
+        e.preventDefault();
+        var body = "Name " + $('#senderName').val() + " Message" + $('#Message').val();
+        console.log(body);
+        location.href=('mailto:adarshmishra0701@gmail.com?subject=From_Website&body='+body);
+        $('#getintouch').reset();
+    })
+
+
+var myVar;
 
 function myFunction() {
   myVar = setTimeout(showPage, 3600);
