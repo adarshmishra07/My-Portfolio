@@ -20,7 +20,8 @@
     <link rel="icon" href="images/favicon.ico">
 </head>
 
-<body>
+<body onload="myFunction()">
+<div class="loading"><div class="typing">&lt;Adarsh Mishra /&gt;</div></div>
     <nav>
 
         <div class="navbar-brand">Adarsh Mishra</div>
@@ -373,7 +374,15 @@
         $('nav').toggleClass('nav-visible');
         $('ul.main-nav').toggleClass('visible');
     });
+    var myVar;
 
+function myFunction() {
+  myVar = setTimeout(showPage, 3600);
+}
+
+function showPage() {
+  $(".loading").css('display',"none");
+}
 </script>
 
 </html>

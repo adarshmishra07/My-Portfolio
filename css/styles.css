@@ -427,3 +427,56 @@ button{
 a:hover{
     text-decoration: none;
 }
+
+.loading{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.typing{
+    overflow: hidden;
+    color: #FF570A;
+  border-right: .15em solid orange; 
+  white-space: nowrap;
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+    letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(17),
+    blink-caret .2s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+    0%{
+        width: 0px;
+    }
+    22%{
+        width: 60px;
+    }
+    44%{
+        width:130px ;
+    }
+    66%{
+        width:200px;
+    }
+    88%{
+        width:280px;
+    }
+    100%{
+        width: 350px;
+    }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #FF570A; }
+  }
