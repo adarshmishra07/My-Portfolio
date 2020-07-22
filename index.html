@@ -17,6 +17,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" />
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="">
     <link rel="icon" href="images/favicon.ico">
 </head>
 
@@ -362,6 +363,7 @@
             </div>
         </div>
     </div>
+    <div id="switch"><i class="fas fa-lightbulb"></i></div>
     <div class="top"><a href="#"><i class="fa fa-arrow-up"></i></a></div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -401,6 +403,23 @@ function myFunction() {
 function showPage() {
   $(".loading").css('display',"none");
 }
+
+var basic = 0;
+
+$('#switch').click(function(){
+    if(basic==0){
+        console.log($('#theme-css').prop('href'));
+        // $('#theme-css').prop('href') = +'light.css';
+        $('link[href=""]').attr('href','./css/light.css');
+        basic=1;
+    }else{
+        $('link[href="./css/light.css"]').attr('href','');
+        basic=0;
+    }
+    
+})
+
+
 </script>
 
 </html>
