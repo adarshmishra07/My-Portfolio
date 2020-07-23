@@ -505,17 +505,17 @@ a:hover{
 
 
   @keyframes shake {
-      0%{
-          transform: rotate(-30deg);
-      }
-      25%{
-          transform: rotate(60deg);
-      }
-      50%{
-          transform: rotate(-30deg);
-      }
-      75%{
+    0%{
+        transform: rotate(-30deg);
+    }
+    25%{
         transform: rotate(60deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    75%{
+    transform: rotate(60deg);
     }
     90%{
         transform: rotate(-30deg);
