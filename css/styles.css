@@ -11,6 +11,7 @@ html{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 body{
@@ -22,6 +23,7 @@ body{
     background-color: var(--bg);
     color: var(--text);
     transition: 0.3s ease all;
+    scroll-snap-type: y mandatory;
 }
 
 nav{
@@ -33,6 +35,7 @@ nav{
     align-items: center;
     width: 100%;
     height: 80px;
+    scroll-snap-align: start;
 }
 ul.main-nav{
     margin: 0px;
@@ -204,6 +207,7 @@ ul.nm li:hover span{
     padding-top: 30px;
     padding-bottom: 30px;
     min-height: 100vh;
+    scroll-snap-align: start;
 }
 
 @media screen and (max-width:700px){
