@@ -370,33 +370,6 @@ a:hover {
     text-decoration: none;
 }
 
-.loading {
-    height: 100vh;
-    width: 100vw;
-    background-color: var(--bg);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-}
-
-.typing {
-    overflow: hidden;
-    color: #FF570A;
-    border-right: .15em solid orange;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    letter-spacing: .15em;
-    /* Adjust as needed */
-    animation:
-        typing 2.5s steps(17),
-        blink-caret .2s step-end infinite;
-}
 
 /* The typing effect */
 @keyframes typing {

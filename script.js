@@ -12,15 +12,6 @@ $("#getintouch").submit(function (e) {
 })
 
 
-var myVar;
-
-function myFunction() {
-    myVar = setTimeout(showPage, 2500);
-}
-
-function showPage() {
-    $(".loading").css('display', "none");
-}
 
 particlesJS("particles-js", {
     "particles": {
