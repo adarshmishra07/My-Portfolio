@@ -120,6 +120,8 @@ a:hover {
 #experience,
 #education,
 #contact {
+    display: grid;
+    place-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
     min-height: 100vh;
