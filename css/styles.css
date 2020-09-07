@@ -256,7 +256,7 @@ h1 {
 .college-container {
     padding: 20px;
     /* position: absolute; */
-    border: 1px solid var(--highlights);
+    /* border: 1px solid var(--highlights); */
     box-shadow: 5px 6px 6px var(--highlights), -3px -3px 4px var(--highlights);
 
 }
@@ -313,7 +313,7 @@ h1 {
 }
 
 .form-container {
-    border: 1px solid var(--highlights);
+    /* border: 1px solid var(--highlights); */
     padding: 20px;
     box-shadow: 5px 6px 6px var(--highlights), -3px -3px 4px var(--highlights);
 }
